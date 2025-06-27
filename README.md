@@ -2,7 +2,7 @@
 
 This project demonstrates the use of a **Strands Agent** connected to a **Neo4j graph database**, enabling agents to answer questions, extract knowledge, and reason about structured data stored in a graph format.
 
-## 📌 Overview
+## Overview
 
 This module showcases how to:
 
@@ -15,7 +15,7 @@ It uses `strands-agents`, `neo4j`, and `strands-agents-tools`, with support from
 
 ---
 
-## 🚀 Features
+## Features
 
 - 🔗 **Graph-Aware Agent**: The agent is augmented with tools to query Neo4j directly.
 - 🧠 **Memory Support**: Converts graph entities and relationships into structured memory for natural reasoning.
@@ -25,7 +25,7 @@ It uses `strands-agents`, `neo4j`, and `strands-agents-tools`, with support from
 
 ---
 
-## 📂 Files
+## Files
 
 - `strands-agent-neo4j.ipynb` — The main notebook demonstrating the pipeline.
 - `requirements.txt` — Dependencies for the project.
@@ -33,7 +33,7 @@ It uses `strands-agents`, `neo4j`, and `strands-agents-tools`, with support from
 
 ---
 
-## ⚙️ Setup
+## Setup
 
 1. **Install dependencies**:
 
@@ -55,7 +55,7 @@ It uses `strands-agents`, `neo4j`, and `strands-agents-tools`, with support from
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Python**
 - **Neo4j** (Graph Database)
@@ -65,7 +65,7 @@ It uses `strands-agents`, `neo4j`, and `strands-agents-tools`, with support from
 
 ---
 
-## 📊 Use Cases
+## Use Cases
 
 - Conversational querying over graph databases.
 - Auto-generating summaries or insights from graph data.
@@ -74,7 +74,7 @@ It uses `strands-agents`, `neo4j`, and `strands-agents-tools`, with support from
 
 ---
 
-## 📌 Example Usage
+## Example Usage
 
 Example prompt to the agent:
 
@@ -86,7 +86,7 @@ The agent will use memory and graph tools to respond intelligently.
 
 ---
 
-## 🧪 Development Notes
+## Development Notes
 
 - Uses `strands-agents-tools.neo4j` for connecting and querying Neo4j.
 - Memory is created using both extracted nodes and relationships.
@@ -94,13 +94,13 @@ The agent will use memory and graph tools to respond intelligently.
 
 ---
 
-## 📜 License
+## License
 
 MIT License (or specify another if applicable)
 
 ---
 
-## 🙋‍♂️ Author
+## Author
 
 Guhan Sivaji  
 [Neo4j Enterprise]
