@@ -96,7 +96,7 @@ The agent will use memory and graph tools to respond intelligently.
 
 ## License
 
-MIT License (or specify another if applicable)
+Apache License 2.0
 
 ---
 
