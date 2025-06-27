@@ -1,0 +1,6 @@
+boto3
+strands-agents
+strands-agents-tools
+python-dotenv
+certifi
+neo4j
