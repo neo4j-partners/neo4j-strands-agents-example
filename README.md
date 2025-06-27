@@ -59,7 +59,7 @@ It uses `strands-agents`, `neo4j`, and `strands-agents-tools`, with support from
 
 - **Python**
 - **Neo4j** (Graph Database)
-- **Strands Agents** ([repo](https://github.com/strands-project/strands-agents))
+- **Strands Agents** ([repo](https://github.com/neo4j-partners/strands-neo4j-agent))
 - **LangChain-style tool interface**
 - **Jupyter Notebook**
 
