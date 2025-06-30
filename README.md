@@ -1,106 +1,59 @@
-# Strands Agent + Neo4j Integration
+# Neo4j + AWS Strands Agent Demo: Financial Crime Exploration
 
-This project demonstrates the use of a **Strands Agent** connected to a **Neo4j graph database**, enabling agents to answer questions, extract knowledge, and reason about structured data stored in a graph format.
-
-## Overview
-
-This module showcases how to:
-
-- Load and configure a `strands` conversational agent.
-- Extend the agent with tools for Neo4j graph interaction.
-- Ingest data from Neo4j and convert it into memory for the agent.
-- Enable querying, summarizing, and contextualizing graph-based knowledge using LLMs.
-
-It uses `strands-agents`, `neo4j`, and `strands-agents-tools`, with support from `python-dotenv` for environment variables.
-
----
+This project demonstrates how to integrate Neo4j with the AWS Strands Agent framework to explore and analyze a financial crime dataset using multi-agent orchestration.
 
 ## Features
+- **Agent orchestration** using the Strands Agent SDK
+- **Neo4j graph database** for financial crime data
+- **AWS Bedrock** for LLM-powered agent reasoning
+- **Jupyter notebook** for interactive exploration
+- Example notebook for agent queries and orchestration
 
-- 🔗 **Graph-Aware Agent**: The agent is augmented with tools to query Neo4j directly.
-- 🧠 **Memory Support**: Converts graph entities and relationships into structured memory for natural reasoning.
-- 🤖 **Multi-turn Chat**: Use the agent in a conversational loop with persistent memory.
-- 📄 **Data Extraction**: Automatically extracts nodes and relationships as memory facts.
-- 🔍 **Question Answering**: Supports QA over the graph and memory using LLM-based prompts.
+## Getting Started
 
----
+### Prerequisites
+- Python 3.10+
+- The notebook uses a publicly hosted Financial crimes investigation dataset
+- AWS account with Bedrock access
+- - [Neo4j Aura](https://neo4j.com/cloud/aura/) or local Neo4j instance if you want to have your own neo4j deployment
+- [strands-agents](https://pypi.org/project/strands-agents/) and [strands-agents-tools](https://pypi.org/project/strands-agents-tools/)
 
-## Files
-
-- `strands-agent-neo4j.ipynb` — The main notebook demonstrating the pipeline.
-- `requirements.txt` — Dependencies for the project.
-- `README.md` — This file.
-
----
-
-## Setup
-
-1. **Install dependencies**:
-
-   ```bash
+### Setup
+1. Clone this repository:
+   ```sh
+   git clone https://github.com/neo4j-labs/neo4j-aws-strands-demo.git
+   cd neo4j-aws-strands-demo
+   ```
+2. Create and activate a Python virtual environment:
+   ```sh
+   python3 -m venv .venv
+   source .venv/bin/activate
+   ```
+3. Install dependencies:
+   ```sh
    pip install -r requirements.txt
    ```
+4. Copy `.env.example` to `.env` and fill in your AWS and Neo4j credentials.
 
-2. **Set environment variables** (via `.env` or system environment):
 
-   ```
-   NEO4J_URI=bolt://localhost:7687
-   NEO4J_USERNAME=neo4j
-   NEO4J_PASSWORD=your_password
-   ```
+### Neo4j MCP Server Integration
+This project uses the [Neo4j MCP server](https://github.com/neo4j-contrib/mcp-neo4j) to enable secure, programmatic access to your Neo4j database from the Strands Agent framework. The MCP server acts as a bridge between the agent tools and your Neo4j instance.
 
-3. **Run the notebook**:
 
-   Launch `strands-agent-neo4j.ipynb` and execute cells sequentially.
+### Usage
+- Open `strands-agent-neo4j.ipynb` in Sagemaker Jupyter Notebook or VS Code for an interactive demo.
+- Run the notebook cells to:
+  - Connect to Neo4j (via MCP server) and AWS
+  - Query the financial crime dataset using LLM agents
+  - Explore the results
 
----
-
-## Tech Stack
-
-- **Python**
-- **Neo4j** (Graph Database)
-- **Strands Agents** ([repo](https://github.com/neo4j-partners/strands-neo4j-agent))
-- **LangChain-style tool interface**
-- **Jupyter Notebook**
-
----
-
-## Use Cases
-
-- Conversational querying over graph databases.
-- Auto-generating summaries or insights from graph data.
-- Building intelligent assistants for knowledge graphs.
-- Enabling LLMs to reason over structured relational data.
-
----
-
-## Example Usage
-
-Example prompt to the agent:
-
-```text
-"Who are the top 3 most connected nodes in the graph?"
-```
-
-The agent will use memory and graph tools to respond intelligently.
-
----
-
-## Development Notes
-
-- Uses `strands-agents-tools.neo4j` for connecting and querying Neo4j.
-- Memory is created using both extracted nodes and relationships.
-- Agent chain integrates tools dynamically.
-
----
+### Project Structure
+- `strands-agent-neo4j.ipynb` — Main notebook demo
+- `.env.example` — Example environment variables
+- `requirements.txt` — Python dependencies
 
 ## License
+[Apache 2.0](LICENSE)
 
-Apache License 2.0
-
----
-
-## Author
-
-Guhan Sivaji  
-[Neo4j Enterprise]
+## About
+This demo is maintained by [Neo4j Labs](https://github.com/neo4j-partners) and is intended for educational and prototyping purposes.
