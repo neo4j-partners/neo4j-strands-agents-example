@@ -21,7 +21,7 @@ This project demonstrates how to integrate Neo4j with the AWS Strands Agent fram
 ### Setup
 1. Clone this repository:
    ```sh
-   git clone [https://github.com/neo4j-partners/strands-neo4j-agent.git](https://github.com/neo4j-partners/strands-neo4j-agent.git)
+   git clone https://github.com/neo4j-partners/strands-neo4j-agent.git
    cd strands-neo4j-demo
    ```
 2. Create and activate a Python virtual environment:
