@@ -56,4 +56,4 @@ This project uses the [Neo4j MCP server](https://github.com/neo4j-contrib/mcp-ne
 [Apache 2.0](LICENSE)
 
 ## About
-This demo is maintained by [Neo4j Labs](https://github.com/neo4j-partners) and is intended for educational and prototyping purposes.
+This demo is maintained by [Neo4j Partners](https://github.com/neo4j-partners) and is intended for educational and prototyping purposes.
