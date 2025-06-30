@@ -1,4 +1,4 @@
-# Neo4j + AWS Strands Agent Demo: Financial Crime Exploration
+# Neo4j + AWS Strands Agent Demo: Financial Crime Investigation Dataset Exploration
 
 This project demonstrates how to integrate Neo4j with the AWS Strands Agent framework to explore and analyze a financial crime dataset using multi-agent orchestration.
 
@@ -13,7 +13,7 @@ This project demonstrates how to integrate Neo4j with the AWS Strands Agent fram
 
 ### Prerequisites
 - Python 3.10+
-- The notebook uses a publicly hosted Financial crimes investigation dataset
+- The notebook uses a publicly hosted [Financial crimes investigation dataset](https://github.com/neo4j-graph-examples/fincen)
 - AWS account with Bedrock access
 - - [Neo4j Aura](https://neo4j.com/cloud/aura/) or local Neo4j instance if you want to have your own neo4j deployment
 - [strands-agents](https://pypi.org/project/strands-agents/) and [strands-agents-tools](https://pypi.org/project/strands-agents-tools/)
